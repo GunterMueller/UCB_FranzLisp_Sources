@@ -34,3 +34,6 @@ This directory contains several free versions of Franz Lisp:
    op38_ucd/ A version of Opus 38.92 hacked at UC Davis to run
              under SunOS 3.5 and 4.0.3. 
 
+   op38_cz A version of Opus 38.92 modified by  Christos Zoulas on base of 
+           the Jeff Dalton changes.
+           Forked from "http://www.netbsd.org/~christos/franz.tar.gz"
