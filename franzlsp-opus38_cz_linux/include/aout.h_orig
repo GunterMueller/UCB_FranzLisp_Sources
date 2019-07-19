@@ -16,26 +16,7 @@ struct exec {
 # include <a.out.h>
 #endif
 
-#ifdef __linux__
-#ifdef N_NLIST
-struct nlist
-{
-  union
-    {
-      char *n_name;
-      struct nlist *n_next;
-      long n_strx;
-    } n_un;
-  unsigned char n_type;
-  char n_other;
-  short n_desc;
-  unsigned long n_value;
-};
-#endif 
-
-#elif
 #include <nlist.h>
-#endif
 
 #ifdef __NetBSD__
 # define a_magic a_midmag
@@ -45,13 +26,13 @@ struct nlist
 # define a_magic a_info
 #endif
 
-/* #ifdef _AOUT_INCLUDE_ */
+#ifdef _AOUT_INCLUDE_
 # define N_name n_un.n_name
 # define STASSGN(p,q) (NTABLE[p].N_name = (q))
-/* #else
+#else
 # define N_name n_name
 # define STASSGN(p,q) strncpy(NTABLE[(p)].n_name,(q),8)
-#endif  */
+#endif
 
 #define OMAGIC          0407    /* old impure format */
 #define NMAGIC          0410    /* read-only text */
