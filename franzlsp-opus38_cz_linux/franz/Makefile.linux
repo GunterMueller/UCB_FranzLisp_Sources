@@ -17,7 +17,7 @@ SRCS=	adbig.c alloc.c calqhat.c clinkfns.c data.c debug.c divbig.c \
 	fexr.c ffasl.c fpipe.c frame.c generic.c inewint.c inits.c io.c \
 	lam1.c lam2.c lam3.c lam4.c lam5.c lam6.c lam7.c lam8.c lam9.c \
 	lamgc.c lamp.c lamr.c lisp.c low.c mlsb.c mulbig.c \
-	nargs.c pbignum.c prunei.c qfuncl.c subbig.c sysat.c trace.c
+	nargs.c pbignum.c prunei.c qfuncl.c subbig.c sysat.c trace.c missing.c 
 SRCS+=arch/x86_64/callg.S
 #SRCS+=os/linux/missing.c
 OBJS= ${SRCS:.c=.o}
