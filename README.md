@@ -37,3 +37,6 @@ This directory contains several free versions of Franz Lisp:
    op38_cz A version of Opus 38.92 modified by  Christos Zoulas on base of 
            the Jeff Dalton changes.
            Forked from "http://www.netbsd.org/~christos/franz.tar.gz"
+   op38_kr A version of Opus 38.92 modified by Kamil Rytarowski on base of 
+           the Jeff Dalton changes.
+           Forked from "http://netbsd.org/~kamil/franz/franz_20190704.tar.bz2"
